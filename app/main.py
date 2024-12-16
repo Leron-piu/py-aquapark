@@ -67,7 +67,7 @@ class Slide:
 
     def can_access(self, other: Visitor) -> bool:
         try:
-            validator = self.limitation_class(
+            self.limitation_class(
                 age=other.age,
                 weight=other.weight,
                 height=other.height)
